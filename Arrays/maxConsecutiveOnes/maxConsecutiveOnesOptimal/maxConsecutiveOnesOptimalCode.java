@@ -22,10 +22,8 @@ public class maxConsecutiveOnesOptimalCode {
                 }
                 left++;
             }
-            if (zero <= k) {
-                int length = right -left +1;
-                maxLength = Math.max(length, maxLength);
-            }
+            int length = right -left +1;
+            maxLength = Math.max(length, maxLength);
             right++;
         }
         return maxLength;
